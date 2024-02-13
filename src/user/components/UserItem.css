@@ -1,3 +1,6 @@
+li{
+  list-style-type: none;
+}
 .user-item {
   margin: 1rem;
   width: calc(45% - 2rem);
