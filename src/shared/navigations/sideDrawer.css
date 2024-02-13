@@ -1,5 +1,4 @@
 .side-drawer {
-    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -8,10 +7,4 @@
     width: 70%;
     background: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  }
-  
-  @media (max-width: 720px) {
-    .side-drawer {
-        display: block;
-    }
   }
