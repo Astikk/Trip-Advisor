@@ -14,11 +14,11 @@ const DUMMY_PLACES = [
       lat: 40.7484445,
       lng: -73.9882393,
     },
-    creator: "U1",
+    creator: "u1",
   },
   {
     id: "p2",
-    title: "Empire State building",
+    title: "Empire State buildingssssssss",
     description: "One of the most famous sky scrapers in the world!",
     image:
       "https://images.unsplash.com/photo-1508094214466-708a7d21c5c0?q=80&w=1161&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -27,15 +27,17 @@ const DUMMY_PLACES = [
       lat: 40.7484445,
       lng: -73.9882393,
     },
-    creator: "U2",
-  }
+    creator: "u2",
+  },
 ];
 
 function UserPlaces() {
   const userId = useParams().userId;
+  const loadedplaces = DUMMY_PLACES.filter((place) => place.creator === userId);
+  console.log(loadedplaces);
   return (
     <>
-      <PlaceList items={DUMMY_PLACES} />
+      <PlaceList items={loadedplaces} />
     </>
   );
 }
