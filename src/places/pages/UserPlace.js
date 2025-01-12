@@ -18,8 +18,8 @@ const DUMMY_PLACES = [
   },
   {
     id: "p2",
-    title: "Empire State buildingssssssss",
-    description: "One of the most famous sky scrapers in the world!",
+    title: "Emp. State of fire",
+    description: "state of read the history goes to land",
     image:
       "https://images.unsplash.com/photo-1508094214466-708a7d21c5c0?q=80&w=1161&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     address: "20 W 34th St., New York, NY 10001, United States",

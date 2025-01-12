@@ -22,9 +22,10 @@ const inputReducer = (state, action) => {
 };
 
 const Input = (props) => {
+  debugger;
   const [inputState, dispatch] = useReducer(inputReducer, {
-    value: props.value || "",
-    isValid: props.valid || false,
+    value: props.initialvalue || "",
+    isValid: props.initialvalid || false,
     isTouched: false,
   });
 
@@ -67,14 +68,14 @@ const Input = (props) => {
         onBlur={touchHandler}
       />
     );
-
+  debugger;
   return (
     <div
       className={`form-control ${
         !inputState.isValid && inputState.isTouched && "form-control--invalid"
       }`}
     >
-      <label htmlFor={props.id}>{props.label}</label>
+      <label htmlFor={props.id}>{props.lable}</label>
       {element}
       {!inputState.isValid && inputState.isTouched && <p>{props.errorText}</p>}
     </div>

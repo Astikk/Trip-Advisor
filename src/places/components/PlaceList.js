@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../../shared/UI elements/Card";
 import { Link } from "react-router-dom";
 import PLaceItems from "./PlaceItems";
+import Button from "../../shared/components/FormElements/Button";
 
 import "./PlaceList.css";
 
@@ -11,7 +12,7 @@ const PlaceList = (props) => {
       <div className="Place-list center">
         <Card>
           <h2>No Places found. Maybe create one?</h2>
-          <button>Shar Place</button>
+          <Button to="/places/new">Shar Place</Button>
         </Card>
       </div>
     );
